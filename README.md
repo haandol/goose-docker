@@ -5,3 +5,12 @@
 this repository is for dockerizing [goose](https://github.com/pressly/goose)
 
 usage ref is here, [hexagonal saga](https://github.com/haandol/hexagonal-saga-architecture)
+
+```yml
+  migrate:
+    image: haandol/goose:3.7.0
+    working_dir: /migrations
+    volumes:
+      - .:/migrations
+    entrypoint: ["./scripts/migrate.sh", "up"]
+```
