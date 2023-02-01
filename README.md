@@ -10,7 +10,7 @@ example of `docker-compose.yml`
 
 ```yml
   migrate:
-    image: haandol/goose:3.7.0
+    image: haandol/goose:3.9.0
     working_dir: /migrations
     volumes:
       - .:/migrations
